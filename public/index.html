@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="blogstyles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script src="https://kit.fontawesome.com/2c2ac2dc92.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300&family=Righteous&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap" rel="stylesheet">  
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>  
+<title>BLOG</title>
+</head>
+
+<body>
+
+    <section>
+       <div class="top-section">
+        
+        <div class="top-navbar">
+          
+          <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #000000;">
+            <div class="container-fluid">
+             <a class="navbar-brand" href="indexhome.html">
+              
+                <img src="data:image/png;base64,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" alt="logo" height="80px" width="200px" />
+              </a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars-host" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>                        
+              </button>
+              <div class="collapse navbar-collapse" id="navbars-host">
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                  <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="courses.html">Courses </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="blog.html">Blog </a>
+                  </li>
+                  <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                  <li class="nav-item"><a class="nav-link" href="service.html">Services</a></li>
+      
+                  <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+                 
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                              <li><a class="hover-btn-new log orange" href="signin.html" ><span>SIGN IN</span></a></li>
+                          </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+        
+       
+         <div class="text-block">
+          <h4><u style="font-size: 50px;">BLOG</u></h4>
+        </div>
+        <img class="ed-img" src="./blog_imgs/newbg.jpg" alt="image">
+       </div>
+    </section>
+
+    
+<div id='root' ></div>
+
+<footer class="footer">
+  <div class="container">
+      <div class="row">
+          <div class="col-lg-4 col-md-4 col-xs-12">
+              <div class="widget clearfix">
+                  <div class="widget-title">
+                      <h3>Social media links</h3>
+                  </div>
+                  <p>Do follow us on our social medial links</p>
+      <div class="footer-right">
+        <ul class="footer-links-soi">
+          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fa fa-github"></i></a></li>
+          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+          <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+        </ul><!-- end links -->
+      </div>						
+              </div><!-- end clearfix -->
+          </div><!-- end col -->
+
+
+  <div class="col-lg-4 col-md-4 col-xs-12">
+              <div class="widget clearfix">
+                  <div class="widget-title">
+                      <h3>Information Link</h3>
+                  </div>
+                  <ul class="footer-links">
+                      <li><a href="index.html">Home</a></li>
+                      <li><a href="blog.html">Blog</a></li>
+                      <li><a href="gallery.html">Gallery</a></li>
+                      <li><a href="service.html">Services</a></li>
+                      <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="about.html">About us</a></li>
+       
+                  </ul><!-- end links -->
+              </div><!-- end clearfix -->
+          </div><!-- end col -->
+  <div class="col-lg-4 col-md-4 col-xs-12">
+              <div class="widget clearfix">
+                  <div class="widget-title">
+                      <h3>Courses</h3>
+                  </div>
+
+                  <ul class="footer-links">
+                      <li><a href="#">Android app development</a></li>
+                      <li><a href="#">Full stack development</a></li>
+                      <li><a href="#">Data Science</a></li>
+                      <li><a href="#">Artificial Intelligence</a></li>
+                      <li><a href="#">Many more</a></li>
+                  </ul><!-- end links -->
+              </div><!-- end clearfix -->
+          </div><!-- end col -->
+
+          
+  
+      </div><!-- end row -->
+  </div><!-- end container -->
+</footer><!-- end footer -->
+
+<div class="copyrights">
+  <div class="container">
+      <div class="footer-distributed">
+          <div class="footer-center">                   
+              <p class="footer-company-name">All Rights Reserved. Learn to thrive institute.</p>
+          </div>
+      </div>
+  </div><!-- end container -->
+</div><!-- end copyrights -->
+
+</body>
+</html>
